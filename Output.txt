@@ -1,0 +1,64 @@
+Sentiment Dataset Shape: (2644, 4)
+Trades Dataset Shape: (211224, 16)
+
+Sentiment Range: 2018-02-01 00:00:00 -> 2025-05-02 00:00:00
+Trade Range: 2023-03-28 00:00:00 -> 2025-06-15 00:00:00
+Common Dates: 6
+
+Matched Trades: 184,263
+
+===== SENTIMENT ANALYSIS =====
+  Classification  Trade_Count     Total_PnL    Avg_PnL  Median_PnL   Win_Rate
+0  Extreme Greed         6962  1.769655e+05  25.418772         0.0  49.008905
+1           Fear       133871  6.699925e+06  50.047622         0.0  41.514592
+2          Greed        36289  3.189617e+06  87.894859         0.0  44.647138
+3        Neutral         7141  1.587424e+05  22.229713         0.0  31.718247
+
+===== LONG VS SHORT =====
+  Classification  side  Trades     Avg_PnL     Total_PnL
+0  Extreme Greed   BUY    3371   25.578564  8.622534e+04
+1  Extreme Greed  SELL    3591   25.268770  9.074015e+04
+2           Fear   BUY   66081   58.074630  3.837630e+06
+3           Fear  SELL   67790   42.222976  2.862296e+06
+4          Greed   BUY   15421   12.489506  1.926007e+05
+5          Greed  SELL   20868  143.617782  2.997016e+06
+6        Neutral   BUY    3505   15.646108  5.483961e+04
+7        Neutral  SELL    3636   28.576120  1.039028e+05
+
+===== TOP SYMBOLS =====
+symbol
+@107       2.776898e+06
+HYPE       1.911331e+06
+ETH        1.431097e+06
+SOL        1.371096e+06
+BTC        6.593113e+05
+MELANIA    3.168006e+05
+ENA        2.173295e+05
+SUI        1.986832e+05
+ZRO        1.837778e+05
+DOGE       1.475432e+05
+Name: TotalPnL, dtype: float64
+
+===== MOST CONSISTENT TRADERS =====
+                                               MeanPnL       StdPnL  ConsistencyScore
+account                                                                              
+0xae5eacaf9c6b9111fd53034a602c192a04e082ed   79.777593   264.166378          0.301998
+0x6d6a4b953f202f8df5bed40692e7fd865318264a  132.017780   508.194826          0.259778
+0x92f17e8d81a944691c10e753af1b1baae1a2cd0d   38.943573   158.718635          0.245362
+0x420ab45e0bd8863569a5efbb9c05d91f40624641  520.902331  2228.336140          0.233763
+0x271b280974205ca63b716753467d5a371de622ab   27.716482   119.639267          0.231667
+0x75f7eeb85dc639d5e99c78f95393aa9a5f1170d4   40.408653   180.381894          0.224017
+0x430f09841d65beb3f27765503d0f850b8bce7713  396.329089  1783.025208          0.222279
+0x2c229d22b100a7beb69122eed721cee9b24011dd   52.142234   256.019993          0.203665
+0x4acb90e786d897ecffb614dc822eb231b4ffb9f4  163.135945   876.607068          0.186099
+0x72c6a4624e1dffa724e6d00d64ceae698af892a0  289.899127  1584.891302          0.182914
+0xa520ded057a32086c40e7dd6ed4eb8efb82c00e0  174.691809   976.068751          0.178975
+0x8170715b3b381dffb7062c0298972d4727a0a63b   63.921782   434.408098          0.147147
+0xaf40fdc468c30116bd3307bcbf4a451a7ebf1deb   40.746876   288.266124          0.141352
+0x47add9a56df66b524d5e2c1993a43cde53b6ed85   12.226096    89.118693          0.137189
+0x7f4f299f74eec87806a830e3caa9afa5f2b9db8f    9.511868    72.662299          0.130905
+0x3f9a0aadc7f04a7c9d75dc1b5a6ddd6e36486cf6  161.133275  1279.855788          0.125900
+0x72743ae2822edd658c0c50608fd7c5c501b2afbd  375.498408  2982.680438          0.125893
+0x8381e6d82f1affd39a336e143e081ef7620a3b7f   34.763948   330.236717          0.105270
+0xb1231a4a2dd02f2276fa3c5e2a2f3436e6bfed23  141.632368  1377.482955          0.102820
+0x513b8629fe877bb581bf244e326a047b249c4ff1   67.250275   725.055342          0.092752
